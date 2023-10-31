@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-zcis
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-43256-0089-tenant/ci1t-43256-0089-app/devfile-sample-zcis@sha256:fd4ea86a4ee8c25857d24b430c90ce4c8e62b49932e5cc732e710af4406d5646
+        name: my-nodejs
+        resources: {}
+status: {}
